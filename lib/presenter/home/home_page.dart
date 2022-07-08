@@ -26,14 +26,20 @@ class _HomePageState extends State<HomePage> {
             Container(
               height: 150,
               width: 250,
-              color: isOn ? Colors.orange : Colors.white,
+              decoration: BoxDecoration(
+                color: isOn ? Colors.orange : Colors.white,
+                borderRadius: isOn ? BorderRadius.circular(20) : null,
+              ),
             ),
             TextButton(
               onPressed: () {
                 changeIsOn();
               },
-              child: const Text(
-                'Ligar/Desligar',
+              child: Text(
+                isOn ? 'Desligar' : 'Ligar',
+                style: const TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
           ],
