@@ -68,6 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Checkbox(
                         checkColor: Colors.white,
@@ -87,13 +88,18 @@ class _LoginPageState extends State<LoginPage> {
                       const Text(
                         'Remember me',
                         style: TextStyle(
-                          fontSize: 17,
+                          fontSize: 15,
+                        ),
+                      ),
+                      
+                      const Text(
+                        'Forgot your password?',
+                        style: TextStyle(
+                          fontSize: 12,
                         ),
                       ),
                     ],
                   ),
-                  const SizedBox(height: 20),
-                  const Text('Forgot your password?'),
                 ],
               ),
             ],
